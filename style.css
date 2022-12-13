@@ -265,7 +265,7 @@ body
     background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
     border-radius: 6px;
     font-size: 2.4rem;
-    font-family: 'Manrope', sans-serif;
+    /*font-family: 'Manrope', sans-serif;*/
     font-weight: 600;
     justify-content: center;
     display: flex;
@@ -274,7 +274,6 @@ body
     cursor: pointer;
     border: none;
 }
-
 
 .result 
 {
@@ -286,7 +285,7 @@ body
 {
     font-size: 1.5rem;
     color: #f35cfe9a;
-    font-family: 'Manrope', sans-serif;
+    /*font-family: sans-serif;*/
     font-weight: 900;
     letter-spacing: .1rem;
     line-height: 2.8rem;
@@ -360,8 +359,6 @@ body
     {
         font-size: 2.9rem;
     }
-    
-    
     
     .time-one ul li span
     {

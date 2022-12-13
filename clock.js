@@ -1,14 +1,10 @@
 let liveTime = () => {
-    let dateTime = new Date();
-    let hrs = dateTime.getHours();
-    let min = dateTime.getMinutes();
-    let sec = dateTime.getSeconds();
-    let zone = document.getElementById("zone");
-  
-    //   AM PM
+    var dateTime = new Date();
+    var hrs = dateTime.getHours();
+    var min = dateTime.getMinutes();
+    var sec = dateTime.getSeconds();
+    var zone = document.getElementById("zone");
     hrs >= 12 ? (zone.innerHTML = "PM") : (zone.innerHTML = "AM");
-  
-    //   Greet message according to live clock
     if (hrs < 12) {
       var greeting = "Good Morning !";
     }
@@ -19,13 +15,9 @@ let liveTime = () => {
       var greeting = "Good Evening !";
     }
     document.getElementById("greet-text").innerHTML = greeting;
-  
-    //   12 hour format
     if (hrs > 12) {
       hrs -= 12;
     }
-  
-    //   live clock time render
     document.getElementById("hours").innerHTML = hrs;
     document.getElementById("minutes").innerHTML = min;
     document.getElementById("seconds").innerHTML = sec;
@@ -42,8 +34,6 @@ let liveTime = () => {
       textDisplay();
       changeDisplay();
   }
-  
-  // to display text from select option
   function textDisplay() {
     let wakeValue = document.getElementById("wakeValue").value;
     document.getElementById("displayWake").innerHTML = wakeValue;
@@ -51,26 +41,22 @@ let liveTime = () => {
     document.getElementById("displayLunch").innerHTML = lunchValue;
     let napValue = document.getElementById("napValue").value;
     document.getElementById("displayNap").innerHTML = napValue;
-  //   changeDisplay();
   }
   
-  // text and image change
-  
   let changeDisplay = () => {
-      // console.log("changedisplaywork")
-    let dateTime = new Date();
-    let hrs = dateTime.getHours();
-    let min = dateTime.getMinutes();
-    let sec = dateTime.getSeconds();
+     let dateTime = new Date();
+     let hrs = dateTime.getHours();
+     let min = dateTime.getMinutes();
+     let sec = dateTime.getSeconds();
   
-    hrs >= 12 ? (zone.innerHTML = "PM") : (zone.innerHTML = "AM");
+     hrs >= 12 ? (zone.innerHTML = "PM") : (zone.innerHTML = "AM");
   
-    if (hrs > 12) {
-      hrs -= 12;
-      hr = hrs;
-    } else {
-      hr = hrs;
-    }
+     if (hrs > 12) {
+       hrs -= 12;
+       hr = hrs;
+     } else {
+       hr = hrs;
+     }
   
     let arr1 = wakeValue.value.split(" ");
     let arr2 = lunchValue.value.split(" ");
