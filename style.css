@@ -1,5 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Manrope:wght@400;600;700&display=swap');*/
-
 :root {
     --main-bg-color: #3D087B;
   }
@@ -19,7 +17,7 @@ body
 {
     width: 80%;
     margin: 0 auto;
-    display: grid;
+    display: grid;    
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     grid-auto-rows: minmax(50px, auto);
@@ -436,5 +434,4 @@ body
         grid-column: 1;
         grid-row: 11;
     }
-
 }

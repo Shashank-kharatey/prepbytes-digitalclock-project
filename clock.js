@@ -10,13 +10,13 @@ let liveTime = () => {
   
     //   Greet message according to live clock
     if (hrs < 12) {
-      var greeting = "Good Morning, Adarsh!";
+      var greeting = "Good Morning !";
     }
     if (hrs >= 12 && hrs <= 18) {
-      var greeting = "Good Afternoon, Adarsh!";
+      var greeting = "Good Afternoon !";
     }
     if (hrs >= 18 && hrs <= 24) {
-      var greeting = "Good Evening, Adarsh!";
+      var greeting = "Good Evening !";
     }
     document.getElementById("greet-text").innerHTML = greeting;
   
